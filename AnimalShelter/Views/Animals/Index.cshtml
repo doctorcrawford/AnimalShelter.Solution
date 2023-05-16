@@ -11,11 +11,11 @@
   <h3>No sacrifices have been offered to the gods, you peasants.</h3>
 }
 
-@* <div>
+<div>
   @foreach(Animal animal in Model)
   {
     <p>@Html.ActionLink($"{animal.Name}", "Details", new { id = animal.AnimalId })</p>
   }
-</div> *@
+</div>
 
 <p>@Html.ActionLink("Add new item", "Create")</p>
