@@ -3,3 +3,11 @@
 }
 
 @model AnimalShelter.Models.Animal
+
+<h3>Animal Details</h3>
+<hr />
+<h4>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h4>
+<h4>@Html.DisplayNameFor(model => model.DOA): @Html.DisplayFor(model => model.DOA)</h4>
+<h4>@Html.ActionLink($"Type: {Model.Type}", "Type", new { type = Model.Type })</4>
+<h4>@Html.DisplayNameFor(model => model.Breed): @Html.DisplayFor(model => model.Breed)</h4>
+<p>@Html.ActionLink("Back to sacrificial list", "Index")</p>

@@ -7,8 +7,8 @@ namespace AnimalShelter.Models
     public int AnimalId { get; set; }
     public string Name { get; set; }
     public DateTime DOA { get; set; }
+    public string Type { get; set; }
     public string Breed { get; set; }
-    public string BreedSub { get; set; }
 
     // public Animal(int animalId, string name, DateTime doa, string breed)
     // {
