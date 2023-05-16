@@ -20,23 +20,23 @@ namespace AnimalShelter.Controllers
       return View(model);
     }
 
-    public ActionResult Create()
-    {
-      return View();
-    }
+    // public ActionResult Create()
+    // {
+    //   return View();
+    // }
 
-    [HttpPost]
-    public ActionResult Create (Animal animal)
-    {
-      _db.Animals.Add(animal);
-      _db.SaveChanges();
-      return RedirectToAction("Index");
-    }
+    // [HttpPost]
+    // public ActionResult Create (Animal animal)
+    // {
+    //   _db.Animals.Add(animal);
+    //   _db.SaveChanges();
+    //   return RedirectToAction("Index");
+    // }
 
-    public ActionResult Details(int id)
-    {
-      Animal thisAnimal = _db.Animals.FirstOrDefault(animal => animal.AnimalId == id);
-      return View(thisAnimal);
-    }
+    // public ActionResult Details(int id)
+    // {
+    //   Animal thisAnimal = _db.Animals.FirstOrDefault(animal => animal.AnimalId == id);
+    //   return View(thisAnimal);
+    // }
   }
 }
